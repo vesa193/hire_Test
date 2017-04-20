@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--Slick CSS(Slider)-->
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <!--Custom CSS Files-->
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<title>PAGE3</title>
+</head>
+<body>
+	<nav id="navbar" class="container">
+		<div class="wrapNavbar">
+			<div class="logo">
+				<img src="_GRAPHICS/icons/logo-header.png">
+			</div>
+			<div class="menu-icon">
+				<i class="hamb glyphicon glyphicon-align-left"></i>
+				<i class="x-icon glyphicon glyphicon-remove"></i>
+			</div>
+			<div id="wrapNav" class="hideNav">
+				<div class="wrapOfBtn">
+					<img src="_GRAPHICS/icons/arrow-select.png">
+					<a class="btnOption" href="#">Select option</a>
+					<ul class="dropdown">
+						<li><img src="_GRAPHICS/icons/icon-door-1-active.png"> <span>OPTION 1</span></li>
+						<li><img src="_GRAPHICS/icons/icon-door-3-active.png"> <span>OPTION 1</span></li>
+						<li><img src="_GRAPHICS/icons/icon-door-2-active.png"> <span>OPTION 1</span></li>
+					</ul>
+				</div>
+
+				<ul class="navLinks">
+					<li><a href="index.html">Page1</a></li>
+					<li><a href="page2.html">Page2</a></li>
+					<li><a class="current" href="page3.html">Page3</a></li>
+				</ul>
+
+				<div class="hdrContact">
+					<img src="_GRAPHICS/icons/phone.png"">	
+					<p><span class="phoneNum">012 / 345-678</span> <span class="underNum">Lorem ipsum dolor</span></p>
+				</div>
+
+				<div class="amblem">
+					<img src="_GRAPHICS/icons/flag-lng.png">
+				</div>
+			</div>	
+		</div>	
+	</nav>
+
+	<section id="titleOfPage2" class="container">
+		<div class="ttl">
+			<p class="fstPrg">Home / Suspendisse</p>
+			<h2>Suspendisse</h2>
+		</div>	
+	</section>
+	<section class="map-wrap">
+		<!-- <iframe class="gmap" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26042.67928446136!2d149.177494!3d-35.322504!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8c7b523070f56d53!2sElect+Printing!5e0!3m2!1sen!2sus!4v1431550158890" width="100%" height="400" frameborder="0" style="border:0">      	
+        </iframe> -->
+        <div id="myMap" class="gmap"></div>
+      	<div id="overlay"></div> 
+	</section>
+	
+	<section id="table" class="container">
+		<div id="filters" class="container">
+			<div class="nationals">
+				<a class="category-item filter-btn active" data-filter="srb">Srbija</a>
+				<a class="category-item filter-btn active" data-filter="ger">Nemacka</a>
+			</div>
+			<div class="actions">
+				<a class="category-item filter-btn active" data-filter="fra">Franšiza</a>
+				<a class="category-item filter-btn" data-filter="vel">Veleprodaja</a>
+				<a class="category-item filter-btn" data-filter="mal">Maloprodaja</a>
+			</div>
+		</div>
+		<table id="posts">
+			  <thead>
+					<th>Država</th>
+					<th>Tip</th>
+					<th>Telefon</th>
+					<th class="alignRight">Adresa</th>
+			  </thead>
+			  <tbody id="filter-table" class="myTable">
+				  <tr class="firstTr item" data-filter="srb fra">
+				    <td>Srbija</td>
+				    <td>Fransiza</td>
+				    <td>+381 234628</td>
+				    <td class="table-text">Lorem ipsum dolor sit amet</td>
+				  </tr>
+				
+				  <tr class="item" data-filter="srb vel">
+				    <td>Srbija</td>
+				    <td>Veleprodaja</td>
+				    <td>+381 9283747492</td>
+				    <td class="table-text">Consectetor aioiscing elit</td>
+				  </tr>
+				  
+				  <tr class="item" data-filter="srb mal">
+				    <td>Srbija</td>
+				    <td>Maloprodaja</td>
+				    <td>+381 9283747</td>
+				    <td class="table-text">Nunc maximus turpis</td>
+				  </tr>
+				  
+				  <tr class="item" data-filter="srb fra">
+				    <td>Srbija</td>
+				    <td>Fransiza</td>
+				    <td>+381 27693423</td>
+				    <td class="table-text">Donec blandit quam</td>
+				  </tr>
+				  
+				  <tr class="item" data-filter="ger fra">
+				    <td>Nemacka</td>
+				    <td>Fransiza</td>
+				    <td>+49 276336325687</td>
+				    <td class="table-text">Nec tindicunt augue ullamcoper</td>
+				  </tr>
+				  
+				  <tr class="item" data-filter="ger fra">
+				    <td>Nemacka</td>
+				    <td>Fransiza</td>
+				    <td>+49 238942934</td>
+				    <td class="table-text">Vivamus vitae lacus</td>
+				  </tr>
+				 
+				  <tr class="bgd-tRow item" data-filter="srb fra">
+				    <td>Srbija</td>
+				    <td>Fransiza</td>
+				    <td>+381 23846923234</td>
+				    <td class="table-text">Interdum er malesuada fames</td>
+				  </tr>
+				  
+				  <tr class="item" data-filter="ger fra">
+				    <td>Nemacka</td>
+				    <td>Fransiza</td>
+				    <td>+49 23619509</td>
+				    <td class="table-text">Ac ante ipsum primis in faucibus</td>
+				  </tr>
+				  
+				  <tr class="item" data-filter="ger vel">
+				  	<td>Nemacka</td>
+				    <td>Veleprodaja</td>
+				    <td>+49 846597456</td>
+				    <td class="table-text">Nam non odio vel</td>
+				  </tr>	   
+				
+				  <tr class="item" data-filter="ger vel">
+				  	<td>Nemacka</td>
+				    <td>Veleprodaja</td>
+				    <td>+49 493856238456</td>
+				    <td class="table-text">Duis libero urna</td>
+				  </tr>	   
+				 
+				  <tr class="item" data-filter="srb mal">
+				    <td>Srbija</td>
+				    <td>Maloprodaja</td>
+				    <td>+381 42569845</td>
+				    <td class="table-text">Dignissim vitae mattis ut</td>
+				  </tr>
+				
+				  <tr class="item" data-filter="ger fra">
+				    <td>Nemacka</td>
+				    <td>Fransiza</td>
+				    <td>+49 4385608465</td>
+				    <td class="table-text">Vestibulum eget purus</td>
+				  </tr>
+				 
+				  <tr class="item" data-filter="ger mal">
+				    <td>Nemacka</td>
+				    <td>Maloprodaja</td>
+				    <td>+49 237845287345</td>
+				    <td class="table-text">Aenean hendrerit lacinia nisi</td>
+				  </tr>
+				 
+				  <tr class="item" data-filter="srb mal">
+				    <td>Srbija</td>
+				    <td>Maloprodaja</td>
+				    <td>+381 3867364</td>
+				    <td class="table-text">Nullam vitaeimprediet neque</td>
+				  </tr>
+				 
+				  <tr class="item" data-filter="srb mal">
+				    <td>Srbija</td>
+				    <td>Maloprodaja</td>
+				    <td>+381 387642873856</td>
+				    <td class="table-text">Donec laoreet lorem</td>
+				  </tr>
+				
+				  <tr class="item" data-filter="srb fra">
+				    <td>Srbija</td>
+				    <td>Fransiza</td>
+				    <td>+381 374729384</td>
+				    <td class="table-text">In et varius erat</td>
+				  </tr>
+				 
+				  <tr class="item" data-filter="srb mal">
+				    <td>Srbija</td>
+				    <td>Maloprodaja</td>
+				    <td>+381 237846392</td>
+				    <td class="table-text">Mauris eleifend tellus non</td>
+				  </tr>
+				 
+				  <tr class="item" data-filter="srb fra">
+				    <td>Srbija</td>
+				    <td>Fransiza</td>
+				    <td>+381 23984769287</td>
+				    <td class="table-text">In et varius erat</td>
+				  </tr>
+				  
+			  </tbody>	
+		</table>
+	</section>
+
+	<section id="submitted" class="container">
+		<h3>Meacenas tempor tincidunt luctus?</h3>
+		<h4>Nunc sodales gravida odio</h4>
+		<a class="submitBtn" href="#">Main Cta</a>
+	</section>
+
+	<footer id="footer" class="container">
+		<img src="_GRAPHICS/icons/logo-footer.png">
+		<div class="wrapFtrLinks">
+			<ul class="ftrLinks">
+				<li><a class="current2" href="index.html">PAGE1</a></li>
+				<li><a href="page2.html">PAGE2</a></li>
+				<li><a href="page3.html">PAGE3</a></li>
+			</ul>
+			<p>Copyright &copy; 2016 Maecemasvel massa ullamcorper</p>
+		</div>	
+	</footer>
+
+	<!--Google Map-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBF4Cnl_ST5IRtF4skep4bYsTXy866iUmE"
+    async defer></script>
+
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<!--Slick JS(Slider)-->
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<!--Custom JS file-->
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/page3.js"></script>
+</body>
+</html>
